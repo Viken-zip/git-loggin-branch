@@ -4,6 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 0, 255, 0.541);
+    color: white;
 }
 
 .cont {
@@ -13,7 +14,7 @@ body {
     height: 60vh;
     align-items: center;
     justify-content: center;
-    margin-top: 7.5rem;
+    margin-top: 12rem;
     border-radius: 50px;
 }
 
@@ -44,8 +45,9 @@ body {
     margin-bottom: 6rem;
 }
 
+
 .yes {
-    margin-left: 1rem;
+    margin-left: 1.4rem;
     width: 1rem;
 }
 
@@ -56,4 +58,8 @@ body {
 
 .lmao{
     margin-left: 1.2rem;
+}
+
+#button{
+    border-radius: 50px;
 }
