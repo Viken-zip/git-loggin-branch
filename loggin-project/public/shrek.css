@@ -1,0 +1,11 @@
+body{
+ margin: 0%; 
+ background-color: lime; 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#no {
+    margin-top: 22rem;
+}
