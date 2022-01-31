@@ -2,8 +2,10 @@ require('dotenv').config();
 const express = require('express');
 const server = express();
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+server.use(bodyParser.json());
 server.use(express.static('public'));
-server.use(express.urlencoded({extended:true}));
+server.use(express.urlencoded({extended:false}));
 const port = 3000;
 
 // dotenv database link
@@ -21,7 +23,7 @@ const userSchema = mongoose.Schema({
     password: String
 });
 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema);
 
 server.post('/loggin', (req, res)=>{
     const name = req.body.txtUserName
@@ -37,6 +39,7 @@ server.post('/loggin', (req, res)=>{
                 console.log('logged in');
                 res.redirect('shrek.html');    // <= inglogga sido (succesfully logged in)
                 //res.redirect('reg.html');      // <= inglogga sido (succesfully logged in)
+
             }
         })
     }
