@@ -1,3 +1,3 @@
 # git-loggin-branch
 
-Hej skriv vad projektet handlar om här i readme
+Detta är ett basic loggin och register sida som gordes för att lära os använda github branches.
