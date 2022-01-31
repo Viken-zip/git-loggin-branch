@@ -24,10 +24,10 @@ const userSchema = mongoose.Schema({
 const User = mongoose.model('User', userSchema)
 
 server.post('/loggin', (req, res)=>{
-    const name = req.body.name
-    const email = req.body.email
-    const password = req.body.password
-
+    const name = req.body.txtUserName
+    const email = req.body.txtEmail
+    const password = req.body.txtPassword
+    
     async function find(){
         User.exists({name: name, email: email, password: password}, function(err, result){
             if(result === null){
@@ -35,7 +35,8 @@ server.post('/loggin', (req, res)=>{
                 res.redirect('/'); // <= inloggnings sidå (failed to loggin)
             } else {
                 console.log('logged in');
-                res.redirect('/'); // <= inglogga sido (succesfully logged in)
+                res.redirect('shrek.html');    // <= inglogga sido (succesfully logged in)
+                //res.redirect('reg.html');      // <= inglogga sido (succesfully logged in)
             }
         })
     }
@@ -51,7 +52,7 @@ server.post('/register', (req, res)=>{
         User.exists({email: email}, function(err, result){
             if(result){
                 console.log('email already in use');
-                res.redirect('/') // <= redirect när man faial med att göra ett konto
+                res.redirect('reg.html') // <= redirect när man faial med att göra ett konto
             } else {
                 console.log('email is free');
                 let data = new User({
@@ -64,7 +65,7 @@ server.post('/register', (req, res)=>{
                         console.log(err);
                     }
                 })
-                res.redirect('/') // <= redirect när man har skapa ett konto
+                res.redirect('loggin.html') // <= redirect när man har skapa ett konto
             }
         })
     }
