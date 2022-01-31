@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.cont {
+    box-shadow: 0px 4px 4px rgba(234, 0, 255, 0.692);
+    display: flex;
+    background-color: rgba(255, 0, 255, 0.678);
+    width: 335px;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+    border-radius: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Email {
+    margin-top: 1rem;
+    display: flex;
+    margin-bottom: 5.5rem;
+    margin-left: 1rem;
+}
+
+#mail{
+    display: flex;
+    margin-right: 1rem;
+}
+
+.Username {
+    display: flex;
+    margin-bottom: 3.5rem;
+}
+
+#usrname {
+    display: flex;
+    margin-bottom: 3.5rem;
+}
+
+.Password {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+
+.yes {
+    margin-left: 1.4rem;
+    width: 1rem;
+}
+
+.no{
+    margin-left: 1.5rem;
+    border-radius: 50px;
+}
+
+.lmao{
+    margin-left: 1.2rem;
+}
+
+#button{
+    border-radius: 50px;
+}
+
+.reg {
+    margin-left: 6rem;
+}
