@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Container" >
+        <span id="loginerr">failed to loggin</span>
+        name<input type="text" name="my_name" id="nameInbox" required>
+        password<input type="password" name="password" id="passowrdInbox" required>
+        <button id="fetchBtn">Log in</button>
+    </div>
+    <div id="registerContainer">
+        <span id="err">name already in use</span>
+        <span id="success">account register successfully</span>
+        name<input type="text" id="register_name" required>
+        password<input type="password" id="register_password" required>
+        <button id="registerBtn">Register</button>
+    </div>
+    <div id="sendContainer" >
+        <span id="senderr">couldnt find that user</span>
+        To<input id="sendTo" type="text" name="to_name" required>
+        message<input id="sendMessage" type="text" name="message" required>
+        <button id="sendBtn">Send</button>
+    </div>
+    <div id="messages">
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
